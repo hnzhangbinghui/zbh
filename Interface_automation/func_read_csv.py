@@ -19,19 +19,18 @@ def read_csv():
             for row in reader:
                 dict_data={}
                 dict_data['Id']=row['Id']
-                dict_data['Methon']=row['Methon']
+                dict_data['Method']=row['Method']
+                dict_data['describe'] = row['describe']
                 dict_data['Url']=row['Url']
                 dict_data['Param']=row['Param']
                 dict_data['Assert_code']=row['Assert_code']
                 datas.append(dict_data)
     except FileExistsError:
         print("文件不存在",csv_path)
-
     return datas
 
-print(read_csv())
 
-
+# print(read_csv())
 
 
 

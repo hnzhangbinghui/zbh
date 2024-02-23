@@ -1,4 +1,4 @@
-Id,Methon,Url,Param,Assert_code
-1,post,http://192.168.99.158:9080/acp-custody/rest/login/extend/userForLogin,"{'loginName':'ab','password':'Ysstech123!@#','validType':0}",200
+Id,Method,Url,Param,Assert_code
+1,post,http://192.168.99.158:9080/acp-custody/rest/login/extend/userForLogin?token=null,"{""loginName"":""ab"",""password"":""Ysstech123!@#"",""validType"":0}",200
 2,post,http://192.168.99.87:8090/api/amc-datalink-server/data-view/query/http,"{""path"":""/productLiquidation/productLiquidationFindByWhere"",""methodName"":""GET"",""linkId"":""d7c356e8a0084eb4a567422893c5875d"",""contentType"":3,""queryParams"":[{""code"":""status"",""value"":""Œ¥¥¶¿Ì""},{""code"":""current"",""value"":1},{""code"":""size"",""value"":10}]}",200
 3,get,http://192.168.99.158:9080/acp-custody/rest/login/extend/findAllImgInfo?token=null&count=0&_=1708589683270,,200

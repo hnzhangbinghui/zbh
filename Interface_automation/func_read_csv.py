@@ -19,7 +19,7 @@ def read_csv():
             for row in reader:
                 dict_data={}
                 dict_data['Id']=row['Id']
-                dict_data['Methon']=row['Methon']
+                dict_data['Method']=row['Method']
                 dict_data['Url']=row['Url']
                 dict_data['Param']=row['Param']
                 dict_data['Assert_code']=row['Assert_code']
@@ -29,7 +29,7 @@ def read_csv():
 
     return datas
 
-print(read_csv())
+# print(read_csv())
 
 
 

@@ -11,7 +11,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 
 
 def test_api():
-    result=[]
+
     result_dict={}
     for i in range(len(func_read_csv.read_csv())):
         if func_read_csv.read_csv()[i]['Method'] == 'post':
@@ -23,7 +23,6 @@ def test_api():
                 result_dict[func_read_csv.read_csv()[i]['describe']] = "测试通过"
             else:
                 result_dict[func_read_csv.read_csv()[i]['describe']] = "测试失败"
-            print("测试通过")
         else:
             a=func_get.api_get(func_read_csv.read_csv()[i]['Url'])
             # print('返回状态：', b)
@@ -33,12 +32,13 @@ def test_api():
                 result_dict[func_read_csv.read_csv()[i]['describe']] = "测试通过"
             else:
                 result_dict[func_read_csv.read_csv()[i]['describe']] = "测试失败"
-            print("测试通过")
-    result.append(result_dict)
-    print(result)
+    # result.append(result_dict)
+    result= [item for item in result_dict.items()]
+    # print(result)
+    return result
 
 
-test_api()
+
 
 
 

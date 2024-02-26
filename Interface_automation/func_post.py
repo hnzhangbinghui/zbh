@@ -7,9 +7,18 @@ import requests
 
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                         'Chrome/85.0.4183.83 Safari/537.36'}
+<<<<<<< HEAD
 # url="http://192.168.99.158:9080/acp-custody/rest/login/extend/userForLogin"
 #
 # res_data={"loginName":"ab","password":"Ysstech123!@#","validType":0}
+=======
+
+headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                        'Chrome/85.0.4183.83 Safari/537.36'}
+url="http://192.168.99.158:9080/acp-custody/rest/login/extend/userForLogin"
+
+res_data={"loginName":"ab","password":"Ysstech123!@#","validType":0}
+>>>>>>> origin/zbh_python_api_0224
 
 
 def api_post(url,data,headers=headers):
@@ -25,3 +34,10 @@ def api_post(url,data,headers=headers):
 
 
 
+<<<<<<< HEAD
+=======
+# print(api_post(url,res_data))
+# print(url,res_data,type(res_data))
+
+# http://192.168.99.158:9080/acp-custody/rest/login/extend/userForLogin?token=null {"loginName":"ab","password":"Ysstech123!@#","validType":0}
+>>>>>>> origin/zbh_python_api_0224

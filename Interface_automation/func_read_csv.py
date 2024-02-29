@@ -20,10 +20,14 @@ def read_csv():
                 dict_data={}
                 dict_data['Id']=row['Id']
                 dict_data['Method']=row['Method']
+<<<<<<< HEAD
+                dict_data['describe'] = row['describe']
+=======
 <<<<<<< HEAD:Interface_automation/func_read_csv.py
                 dict_data['describe'] = row['describe']
 =======
 >>>>>>> origin/zbh_python_api_0224:Interface_automation/func_read_csc.py
+>>>>>>> origin/zbh_python_api_0224
                 dict_data['Url']=row['Url']
                 dict_data['Param']=row['Param']
                 dict_data['Assert_code']=row['Assert_code']
@@ -32,11 +36,14 @@ def read_csv():
         print("文件不存在",csv_path)
     return datas
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Interface_automation/func_read_csv.py
 =======
 # print(read_csv())
 
 >>>>>>> origin/zbh_python_api_0224:Interface_automation/func_read_csc.py
+>>>>>>> origin/zbh_python_api_0224
 
 # print(read_csv())
 

@@ -1,3 +1,6 @@
-describe,test_result
-login,测试失败
-login2,测试失败2
+login,测试通过
+post查询,测试失败
+get查询,测试通过
+login2,测试通过
+post查询2,测试失败
+get查询2,测试通过
